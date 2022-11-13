@@ -162,7 +162,7 @@ config := &Config{
 
 
 Benchmark Report 
-
+```
 goos: linux
 goarch: amd64
 pkg: github.com/suhasagg/fastestmerkletreeroothashcalculator
@@ -190,3 +190,4 @@ BenchmarkMerkleTreeRootHashHashFuncBlake3DivideAndConquer32           24        
 
 
 (```100 ns/op``` means each function execution takes 100 nanoseconds (10^9 ns = 1s))
+```
