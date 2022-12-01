@@ -192,5 +192,4 @@ BenchmarkMerkleTreeRootHashHashFuncBlake3DivideAndConquer32           24        
 (```100 ns/op``` means each function execution takes 100 nanoseconds (10^9 ns = 1s))
 ```
 
-Reference
-https://github.com/txaty/go-merkletree
+
