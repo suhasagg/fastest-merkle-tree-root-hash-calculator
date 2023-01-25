@@ -3,6 +3,15 @@
 ![MerkleTree-min](https://user-images.githubusercontent.com/3880512/187171515-36ae370c-c30c-4231-858d-dc71b275ce6a.png)
 
 
+Parallel construction of a Merkle tree in Go (Golang) can be achieved by using goroutines and channels. A goroutine is a lightweight thread of execution, and channels are used for communication between goroutines.
+
+One approach to building a parallel Merkle tree in Go would be to use goroutines to compute the hashes for each leaf node of the tree in parallel. The leaf nodes can be passed to the goroutines through channels, and the resulting hashes can be collected in another channel. Once all of the leaf hashes have been computed, the goroutines can be used to compute the hashes for the next level of the tree in the same manner.
+
+Another approach could be to have one goroutine per leaf node, where each goroutine computes the hashes for its corresponding leaf node and then sends it to the channel.
+
+Another approach is to have a pool of goroutines, where the main goroutine assigns a leaf node to a goroutine from the pool and waits for the goroutine to compute the hash and return it.
+
+
 Feature set 
 
 1)Merkle Tree build - Normal / Concurrent Mode
